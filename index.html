@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <div class="unit title">
+        <h1 class="mt-2">
+          Countdown
+          <br />
+          Timer
+        </h1>
+      </div>
+      <div class="unit">
+        <div class="range-container mb-2">
+          <p class="ft-normal">
+            Set Time Range: <strong id="selectedRange">1 Minute</strong>
+          </p>
+          <input
+            type="range"
+            name="range"
+            value="1"
+            id="range"
+            min="1"
+            max="60"
+          />
+        </div>
+      </div>
+      <div class="unit app-container mt-2 mb-2">
+        <div class="analog-counter">
+          <canvas id="canvas" width="300" height="300"></canvas>
+        </div>
+        <div class="digital-counter text-center">
+          <h4>Time Left</h4>
+          <span id="minutes">0</span> Minutes
+          <span id="seconds">0</span> Seconds
+        </div>
+        <div class="action-bar">
+          <button id="resetBtn">Reset</button>
+          <button id="startBtn">Start</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
