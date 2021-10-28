@@ -215,9 +215,9 @@ input[type="range"]::-ms-thumb {
 }
 
 .app-wrapper .app-container div.digital-counter {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
 }
 
 .app-wrapper .app-container div.action-bar {
